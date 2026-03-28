@@ -1,0 +1,10 @@
+{
+  "name": "hackaton-taller-web-grupo6-root",
+  "private": true,
+  "scripts": {
+    "dev": "cd my-app && npm run dev",
+    "build": "cd my-app && npm run build",
+    "start": "cd my-app && npm run start",
+    "lint": "cd my-app && npm run lint"
+  }
+}
