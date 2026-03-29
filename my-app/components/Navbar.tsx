@@ -7,19 +7,17 @@ export default function Navbar() {
   const pathname = usePathname() ?? "/";
 
   return (
-    <>
-      {/* Navbar normal (arriba) */}
+    <div>
       <nav className="w-full bg-slate-800 text-slate-200">
         <NavbarContent pathname={pathname} />
       </nav>
 
       <div className="h-px w-full bg-white" />
 
-      {/* Navbar invertido horizontalmente (abajo) */}
       <nav className="w-full bg-slate-800 text-slate-200 transform -scale-x-100">
         <NavbarContent pathname={pathname} />
       </nav>
-    </>
+    </div>
   );
 }
 

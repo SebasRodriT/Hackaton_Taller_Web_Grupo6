@@ -57,7 +57,6 @@ export default function ProgressBarForm() {
           <p className="text-sm font-semibold text-slate-900">{percent}%</p>
         </div>
 
-        {/* Barra visual */}
         <div className="relative mt-2 h-4 w-full overflow-hidden rounded-full bg-slate-200">
           <div
             className="h-full rounded-full bg-indigo-500 transition-[width] duration-200"
@@ -65,7 +64,6 @@ export default function ProgressBarForm() {
           />
         </div>
 
-        {/* Semántica accesible */}
         <progress
           className="sr-only"
           value={percent}
