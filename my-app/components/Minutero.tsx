@@ -16,7 +16,7 @@ export default function Minutero() {
   const handleStop = () => {
     if (intervalRef.current) {
       clearInterval(intervalRef.current);
-      intervalRef.current = null;
+      intervalRef.current = stop;
     }
   };
 
@@ -43,7 +43,7 @@ export default function Minutero() {
       </div>
       <div className="mt-6 flex justify-center gap-4">
         <button
-          onClick={handleStart}
+          onClick={handleStop}
           className="rounded bg-green-500 px-4 py-2 font-semibold text-white hover:bg-green-600"
         >
           Start
